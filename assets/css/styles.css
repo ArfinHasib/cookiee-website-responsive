@@ -319,16 +319,31 @@ img {
    background-color: var(--second-color);
    color: var(--second-color-dark);
    font-weight: var(--font-semi-bold);
-   padding: 0.75rem 2rem;
+   padding: 1rem 2rem;
    border-radius: 4rem;
    box-shadow: inset var(--shadow-button);
+   transition: all 0.3s ease;
+}
+
+.button:hover {
+   background: white;
+   color: var(--second-color-dark);
+   box-shadow: none;
 }
 
 .button__ghost {
-   background-color: transparent;
+   background-color: white;
+   padding: 0.75rem 2rem;
+   color: var(--second-color-dark);
+   border: 3px solid white;
    box-shadow: none;
+}
+
+.button__ghost:hover {
+   background: transparent;
    border: 3px solid var(--second-color);
    color: var(--second-color);
+   box-shadow: none;
 }
 
 /*=============== FAVORITES ===============*/
@@ -442,7 +457,7 @@ img {
 
 /*=============== BANNER ===============*/
 .banner {
-   padding-top: 3rem;
+   padding-top: 0rem;
 }
 
 .banner__container {
@@ -943,7 +958,7 @@ img {
    }
 
    .banner {
-      padding-top: 4rem;
+      /* padding-top: 4rem; */
    }
    .banner__list {
       column-gap: 6.5rem;
